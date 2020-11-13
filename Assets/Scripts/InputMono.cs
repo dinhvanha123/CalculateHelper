@@ -6,7 +6,7 @@ using TMPro;
 using System.Globalization;
 public class InputMono : MonoBehaviour
 {
-    public static string RATIO_KEY = "RATIO_KEY";
+    public static string RATIO_KEY = "VALUE_KEY";
     public Text textResult;
     public TMP_InputField tmpTextValue;
     public TMP_InputField tmpTextRatio;
@@ -50,7 +50,7 @@ public class InputMono : MonoBehaviour
         if (string.IsNullOrEmpty(tmpTextRatio.text))
         {
             tmpTextRatio.text = "1.5";
-            SavePrefs();
+           // SavePrefs();
         }
 
         UpdateTextResult();
